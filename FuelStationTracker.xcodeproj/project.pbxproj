@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		483DBA47252382DA00A6AA5F /* AddNewStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483DBA46252382DA00A6AA5F /* AddNewStation.swift */; };
+		484B806F2523C544004E433E /* StoryboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484B806E2523C544004E433E /* StoryboardService.swift */; };
+		484B80722523C74A004E433E /* AddNewStation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484B80712523C74A004E433E /* AddNewStation.storyboard */; };
+		485CAE602525BCE4004F90AE /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CAE5F2525BCE4004F90AE /* OrderModel.swift */; };
+		485CAE6325260CFC004F90AE /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485CAE6225260CFC004F90AE /* DetailsCell.swift */; };
+		48AB11452529B90900A096D1 /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB11442529B90900A096D1 /* SyncService.swift */; };
+		48AB11482529C69800A096D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48AB11472529C69700A096D1 /* GoogleService-Info.plist */; };
+		48EF16B3252272E0009351EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF16B2252272E0009351EF /* AppDelegate.swift */; };
+		48EF16B5252272E0009351EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF16B4252272E0009351EF /* SceneDelegate.swift */; };
+		48EF16BA252272E0009351EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48EF16B8252272E0009351EF /* Main.storyboard */; };
+		48EF16BC252272E7009351EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48EF16BB252272E7009351EF /* Assets.xcassets */; };
+		48EF16BF252272E7009351EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48EF16BD252272E7009351EF /* LaunchScreen.storyboard */; };
+		48EF16C725231259009351EF /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF16C625231259009351EF /* ParentViewController.swift */; };
+		48EF16C9252318B6009351EF /* FuelStationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF16C8252318B6009351EF /* FuelStationsViewController.swift */; };
+		48EF16CB252318EC009351EF /* DetailsStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF16CA252318EC009351EF /* DetailsStationViewController.swift */; };
+		FDA0E14B67C5AD9A77868C79 /* Pods_FuelStationTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC158BAAFA6302B524F296F /* Pods_FuelStationTracker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		483DBA46252382DA00A6AA5F /* AddNewStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewStation.swift; sourceTree = "<group>"; };
+		484B806E2523C544004E433E /* StoryboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardService.swift; sourceTree = "<group>"; };
+		484B80712523C74A004E433E /* AddNewStation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewStation.storyboard; sourceTree = "<group>"; };
+		485CAE5F2525BCE4004F90AE /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		485CAE6225260CFC004F90AE /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		48AB11442529B90900A096D1 /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
+		48AB11472529C69700A096D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		48EF16AF252272E0009351EF /* FuelStationTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelStationTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48EF16B2252272E0009351EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48EF16B4252272E0009351EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		48EF16B9252272E0009351EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48EF16BB252272E7009351EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48EF16BE252272E7009351EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48EF16C0252272E7009351EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48EF16C625231259009351EF /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		48EF16C8252318B6009351EF /* FuelStationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelStationsViewController.swift; sourceTree = "<group>"; };
+		48EF16CA252318EC009351EF /* DetailsStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsStationViewController.swift; sourceTree = "<group>"; };
+		71C2E464E08FA94BE31265C5 /* Pods-FuelStationTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelStationTracker.debug.xcconfig"; path = "Target Support Files/Pods-FuelStationTracker/Pods-FuelStationTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		9FC158BAAFA6302B524F296F /* Pods_FuelStationTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelStationTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F8B0F78CDF3F56683E9C18 /* Pods-FuelStationTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelStationTracker.release.xcconfig"; path = "Target Support Files/Pods-FuelStationTracker/Pods-FuelStationTracker.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48EF16AC252272E0009351EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA0E14B67C5AD9A77868C79 /* Pods_FuelStationTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		484B806D2523C4F6004E433E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				484B806E2523C544004E433E /* StoryboardService.swift */,
+				48AB11442529B90900A096D1 /* SyncService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		484B80702523C725004E433E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				484B80712523C74A004E433E /* AddNewStation.storyboard */,
+				48EF16B8252272E0009351EF /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		484B80732523C833004E433E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				48EF16B2252272E0009351EF /* AppDelegate.swift */,
+				48EF16B4252272E0009351EF /* SceneDelegate.swift */,
+				48EF16BB252272E7009351EF /* Assets.xcassets */,
+				48EF16BD252272E7009351EF /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		485CAE5E2525BCBD004F90AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				485CAE5F2525BCE4004F90AE /* OrderModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		485CAE6125260CD8004F90AE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				485CAE6225260CFC004F90AE /* DetailsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		48AB11462529BF7E00A096D1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				48EF16C625231259009351EF /* ParentViewController.swift */,
+				48EF16C8252318B6009351EF /* FuelStationsViewController.swift */,
+				483DBA46252382DA00A6AA5F /* AddNewStation.swift */,
+				48EF16CA252318EC009351EF /* DetailsStationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		48EF16A6252272E0009351EF = {
+			isa = PBXGroup;
+			children = (
+				48EF16B1252272E0009351EF /* FuelStationTracker */,
+				48EF16B0252272E0009351EF /* Products */,
+				DEC0399F2A8C6AD877141C36 /* Pods */,
+				ABF3F305ABBD970881BD2252 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		48EF16B0252272E0009351EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48EF16AF252272E0009351EF /* FuelStationTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48EF16B1252272E0009351EF /* FuelStationTracker */ = {
+			isa = PBXGroup;
+			children = (
+				48AB11462529BF7E00A096D1 /* Controllers */,
+				485CAE6125260CD8004F90AE /* Cells */,
+				485CAE5E2525BCBD004F90AE /* Models */,
+				484B80732523C833004E433E /* SupportingFiles */,
+				484B80702523C725004E433E /* Storyboards */,
+				484B806D2523C4F6004E433E /* Services */,
+				48EF16C0252272E7009351EF /* Info.plist */,
+				48AB11472529C69700A096D1 /* GoogleService-Info.plist */,
+			);
+			path = FuelStationTracker;
+			sourceTree = "<group>";
+		};
+		ABF3F305ABBD970881BD2252 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FC158BAAFA6302B524F296F /* Pods_FuelStationTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEC0399F2A8C6AD877141C36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71C2E464E08FA94BE31265C5 /* Pods-FuelStationTracker.debug.xcconfig */,
+				A1F8B0F78CDF3F56683E9C18 /* Pods-FuelStationTracker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48EF16AE252272E0009351EF /* FuelStationTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48EF16C3252272E7009351EF /* Build configuration list for PBXNativeTarget "FuelStationTracker" */;
+			buildPhases = (
+				269B2AB35E3DE44F047BAC67 /* [CP] Check Pods Manifest.lock */,
+				48EF16AB252272E0009351EF /* Sources */,
+				48EF16AC252272E0009351EF /* Frameworks */,
+				48EF16AD252272E0009351EF /* Resources */,
+				8F57A74B406954CEC208A105 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuelStationTracker;
+			productName = FuelStationTracker;
+			productReference = 48EF16AF252272E0009351EF /* FuelStationTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48EF16A7252272E0009351EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Ihor Vozhdai";
+				TargetAttributes = {
+					48EF16AE252272E0009351EF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 48EF16AA252272E0009351EF /* Build configuration list for PBXProject "FuelStationTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48EF16A6252272E0009351EF;
+			productRefGroup = 48EF16B0252272E0009351EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48EF16AE252272E0009351EF /* FuelStationTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48EF16AD252272E0009351EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484B80722523C74A004E433E /* AddNewStation.storyboard in Resources */,
+				48EF16BF252272E7009351EF /* LaunchScreen.storyboard in Resources */,
+				48AB11482529C69800A096D1 /* GoogleService-Info.plist in Resources */,
+				48EF16BC252272E7009351EF /* Assets.xcassets in Resources */,
+				48EF16BA252272E0009351EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		269B2AB35E3DE44F047BAC67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FuelStationTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F57A74B406954CEC208A105 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FuelStationTracker/Pods-FuelStationTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FuelStationTracker/Pods-FuelStationTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FuelStationTracker/Pods-FuelStationTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48EF16AB252272E0009351EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485CAE6325260CFC004F90AE /* DetailsCell.swift in Sources */,
+				485CAE602525BCE4004F90AE /* OrderModel.swift in Sources */,
+				48EF16B3252272E0009351EF /* AppDelegate.swift in Sources */,
+				484B806F2523C544004E433E /* StoryboardService.swift in Sources */,
+				48AB11452529B90900A096D1 /* SyncService.swift in Sources */,
+				48EF16CB252318EC009351EF /* DetailsStationViewController.swift in Sources */,
+				48EF16B5252272E0009351EF /* SceneDelegate.swift in Sources */,
+				483DBA47252382DA00A6AA5F /* AddNewStation.swift in Sources */,
+				48EF16C9252318B6009351EF /* FuelStationsViewController.swift in Sources */,
+				48EF16C725231259009351EF /* ParentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		48EF16B8252272E0009351EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48EF16B9252272E0009351EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48EF16BD252272E7009351EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48EF16BE252272E7009351EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48EF16C1252272E7009351EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48EF16C2252272E7009351EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48EF16C4252272E7009351EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71C2E464E08FA94BE31265C5 /* Pods-FuelStationTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K477UY2Q46;
+				INFOPLIST_FILE = FuelStationTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.movie.FuelStationTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48EF16C5252272E7009351EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1F8B0F78CDF3F56683E9C18 /* Pods-FuelStationTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K477UY2Q46;
+				INFOPLIST_FILE = FuelStationTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.movie.FuelStationTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48EF16AA252272E0009351EF /* Build configuration list for PBXProject "FuelStationTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48EF16C1252272E7009351EF /* Debug */,
+				48EF16C2252272E7009351EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48EF16C3252272E7009351EF /* Build configuration list for PBXNativeTarget "FuelStationTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48EF16C4252272E7009351EF /* Debug */,
+				48EF16C5252272E7009351EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48EF16A7252272E0009351EF /* Project object */;
+}
